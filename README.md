@@ -22,3 +22,13 @@ Installing and configuring tailwindcss
 $ npm i tailwindcss postcss autoprefixer -D
 $ npx tailwindcss init -p
 ```
+
+## VSCode Extensions
+
+- [GraphQL](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+
+## GraphCMS - Headless CMS
+
+- [graphcms.com](https://graphcms.com)
