@@ -13,3 +13,12 @@ Ok to proceed? (y)
 ✔ Select a framework: › react
 ✔ Select a variant: › react-ts
 ```
+
+## tailwindcss
+
+Installing and configuring tailwindcss
+
+```
+$ npm i tailwindcss postcss autoprefixer -D
+$ npx tailwindcss init -p
+```
