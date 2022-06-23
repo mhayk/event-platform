@@ -1,25 +1,42 @@
 import { CheckCircle } from 'phosphor-react'
+import { isPast, format } from 'date-fns'
 
-export function Lesson() {
+interface LessonProps {
+    title: string;
+    slug: string;
+    availableAt: Date;
+    type: "live" | "class";
+}
+
+export function Lesson(props: LessonProps) {
+    const isLessonAvailable = isPast(props.availableAt)
+    const availableDateFormatted = format(props.availableAt, "EEEE' • 'd MMMM' • 'k'h'mm")
     return (
         <a href="#">
             <span className="text-gray-300">
-                Terça • 22 de junho • 19h00
+                {availableDateFormatted}
             </span>
 
             <div className="rounded border border-gray-500 p-4 mt-2">
                 <header className="flex items-center justify-between">
-                    <span className="text-sm text-blue-500 font-medium flex items-center gap-2">
-                        <CheckCircle size={20} />
-                        Content available
-                    </span>
+                    {isLessonAvailable ? (
+                        <span className="text-sm text-blue-500 font-medium flex items-center gap-2">
+                            <CheckCircle size={20} />
+                            Content available
+                        </span>
+                    ) : (
+                        <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
+                            <CheckCircle size={20} />
+                            Coming soon
+                        </span>
+                    )}
                     <span className="text-xs rounded py-[0.125rem] px-2 text-white border border-green-300 font-bold">
-                        LIVE
+                        {props.type === 'live' ? 'LIVE' : 'HANDS ON'}
                     </span>
                 </header>
 
                 <strong className="text-gray-200 mt-5 block">
-                    Ignite Lab event opening
+                    {props.title}
                 </strong>
             </div>
         </a>
