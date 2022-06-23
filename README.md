@@ -42,3 +42,11 @@ $ npm i @apollo/client graphql
 ## svg2jsx.com
 
 - [svg2jsx.com](http://svg2jsx.com)
+
+## Icon library - phosphoricons
+
+- [phosphoricons](https://phosphoricons.com/)
+
+```
+$ npm i phosphor-react
+```
