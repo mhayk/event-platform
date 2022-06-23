@@ -32,3 +32,9 @@ $ npx tailwindcss init -p
 ## GraphCMS - Headless CMS
 
 - [graphcms.com](https://graphcms.com)
+
+## Apollo and graphQL
+
+```
+$ npm i @apollo/client graphql
+```
