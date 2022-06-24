@@ -50,3 +50,11 @@ $ npm i @apollo/client graphql
 ```
 $ npm i phosphor-react
 ```
+
+## Vimejs
+
+- [vime](https://vimejs.com)
+
+```
+$ npm i @vime/core @vime/react
+```
