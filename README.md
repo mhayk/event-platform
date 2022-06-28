@@ -66,3 +66,12 @@ $ npm i @vime/core @vime/react
 ```
 $ npm i react-router-dom
 ```
+
+## GraphQL Code Generator
+
+- [graphql-code-generator](https://www.graphql-code-generator.com/)
+
+```
+$ npm install @graphql-codegen/typescript @graphql-codegen/typescript-operations @graphql-codegen/typescript-react-apollo @graphql-codegen/cli -D
+
+```
